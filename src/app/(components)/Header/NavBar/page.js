@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.scss";
 import { IoSearch } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
-import Logo from "../Logo/page";
+import Logo from "../../Logo/page";
 
 const NavBar = () => {
     

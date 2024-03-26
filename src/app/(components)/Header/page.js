@@ -1,8 +1,13 @@
-import NavBar from "@/app/(components)/NavBar/page";
+import NavBar from "@/app/(components)/Header/NavBar/page";
+import Hero from "./Hero/page";
+import styles from "./page.module.scss";
 
 const Header = () => {
     return (
-        <NavBar />
+        <header className={styles.HeaderSection}>
+            <NavBar />
+            <Hero />
+        </header>
     )
 }
 
