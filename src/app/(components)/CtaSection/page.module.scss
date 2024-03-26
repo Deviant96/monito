@@ -9,6 +9,10 @@
     border-radius: 20px;
     overflow: hidden;
 
+    .textSection {
+
+    }
+
     h1, h2 {
         color: $primary-color;
     }
@@ -104,5 +108,70 @@
 
         transform: rotate(210deg);
         background-color: #032D4B;
+    }
+
+    @media screen and (min-width: $breakpoint-mobile) {
+            @include ContainerBreakpointMobile();
+
+            .ctaImageContainer {
+                text-align: center;
+            }
+
+            .ctaImage {
+                max-width: 300px;
+            }
+
+        .RectangleCta1 {
+            top: -571px;
+            left: 201px;  
+            transform: rotate(188deg) scale(170%);
+        }
+    
+        .RectangleCta2 {
+            left: 200px;
+            transform: rotate(187deg) scale(170%);
+            top: unset;
+            bottom: -935px;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        @include ContainerBreakpointDesktop();
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+
+        .textSection { 
+            flex: 1;
+            padding: 32px 64px;
+            max-width: 40%;
+        }
+
+        .ctaImageContainer { 
+            flex: 2; 
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40%;
+            text-align: center;
+        }
+
+        .ctaImage {
+            height: auto;
+            width: 263px;
+        }
+
+        .RectangleCta1 {
+            transform: rotate(290deg);
+            right: -121px;
+            left: unset;
+            top: -244px;
+        }
+    
+        .RectangleCta2 {
+            top: 141px;
+            left: -157px;
+            transform: rotate(27deg);
+        }
     }
 }
