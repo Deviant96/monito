@@ -1,0 +1,55 @@
+@import "@/app/styles/partials/_variables";
+
+.CtaSubscribeContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: $primary-color;
+    width: 100%;
+    padding: 16px;
+    border-radius: 16px;
+
+    color: #FFFFFF;
+
+    h1 {
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 700;
+    }
+
+    footer {
+        margin-top: 24px;
+        padding: 16px;
+        background-color: #FFFFFF;
+        border-radius: 14px;
+        color: $primary-color;
+    }
+
+    label {
+        display: none;
+    }
+
+    input {
+        padding: 16px;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    input[type="text"] {
+        border: 1px solid $neutral-color;
+        color: $neutral-color;
+    }
+
+    input[type="submit"] {
+        margin-top: 16px;
+        border: none;
+        background-color: $primary-color;
+        color: #FFFFFF;
+    }
+}
+
+.NavContainer {
+    padding: 32px 0 12px;
+}

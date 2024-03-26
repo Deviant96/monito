@@ -1,0 +1,21 @@
+@import "@/app/styles/partials/_variables";
+
+.FooterSection {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    padding: 24px 0;
+
+    hr {
+        margin-top: 24px;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $neutral-color;
+    }
+
+    .FooterLogo {
+        margin-top: 30px;
+        max-width: 120px;
+    }
+}

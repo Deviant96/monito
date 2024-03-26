@@ -1,0 +1,27 @@
+@import "@/app/styles/partials/_variables";
+
+.FooterNavContainer {
+    margin-top: 24px;
+    width: 100%;
+    color: $primary-color;
+
+    ul {
+        list-style-type: none;
+    }
+    
+    .MenuList {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .SocialList {
+        margin-top: 18px;
+
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        gap: 2rem;
+
+        font-size: 28px;
+    }
+}
