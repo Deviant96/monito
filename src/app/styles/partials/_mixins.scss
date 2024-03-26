@@ -7,3 +7,13 @@
     justify-content: space-between;
     gap: 12px;
 }
+
+@mixin ContainerBreakpointMobile {
+    margin: 0 32px;
+}
+
+@mixin ContainerBreakpointDesktop {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}

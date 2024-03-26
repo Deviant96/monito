@@ -1,8 +1,12 @@
 @import "@/app/styles/partials/_variables";
 
 .FooterNavContainer {
+    display: flex;
+    flex-flow: column nowrap;
+
     margin-top: 24px;
     width: 100%;
+
     color: $primary-color;
 
     ul {
@@ -23,5 +27,14 @@
         gap: 2rem;
 
         font-size: 28px;
+    }
+
+    @media screen and (min-width: $breakpoint-mobile) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .SocialList { margin-top: 0; }
+        .MenuList { gap: 16px }
     }
 }

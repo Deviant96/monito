@@ -17,4 +17,8 @@
     a {
         color: $primary-color;
     }
+
+    @media screen and (min-width: $breakpoint-mobile) {
+        margin-top: 0;
+    }
 }

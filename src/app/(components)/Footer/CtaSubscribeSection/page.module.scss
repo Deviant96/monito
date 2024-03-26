@@ -10,6 +10,7 @@
 
     background-color: $primary-color;
     padding: 16px;
+    width: 100%;
     border-radius: 16px;
 
     color: #FFFFFF;
@@ -21,6 +22,7 @@
     }
 
     footer {
+        width: 100%;
         margin-top: 24px;
         padding: 16px;
         background-color: #FFFFFF;
@@ -48,6 +50,42 @@
         border: none;
         background-color: $primary-color;
         color: #FFFFFF;
+    }
+
+    @media screen and (min-width: $breakpoint-mobile) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 32px;
+
+        header {
+            padding-right: 16px;
+        }
+
+        footer {
+            margin: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 16px;
+        }
+
+        input {
+            padding: 14px 28px;
+        }
+
+        input[type="text"] {
+            flex: 3;
+        }
+
+        input[type="submit"] {
+            margin-top: 0;
+            flex: 1;
+        }
     }
 }
 

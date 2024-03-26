@@ -1,6 +1,7 @@
 @import "@/app/styles/partials/_variables";
+@import "@/app/styles/partials/_mixins";
 
-.FooterSection {
+.FooterSection {    
     margin: 0 16px;
     
     display: flex;
@@ -13,11 +14,44 @@
         margin-top: 24px;
         width: 100%;
         border: none;
-        border-bottom: 1px solid $neutral-color;
+        border-bottom: 1px solid $neutral-color-20;
+    } 
+
+    @media screen and (min-width: $breakpoint-mobile) {
+        @include ContainerBreakpointMobile();
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        @include ContainerBreakpointDesktop();
+    }
+}
+
+.BottomPart {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    small, a {
+        color: $neutral-color-60;
     }
 
     .FooterLogo {
         margin-top: 30px;
         max-width: 120px;
+        width: 115px;
+        height: 40px;
+    }
+
+    @media screen and (min-width: $breakpoint-mobile) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0 0;
+        width: 100%;
+
+        .FooterLogo { margin-top: 0; order: 2 }
+        .Terms { order: 3; display: flex; align-items: center; }
+        .Copy { order: 1 }
     }
 }
