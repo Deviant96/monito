@@ -5,4 +5,25 @@
     position: relative;
     z-index: 5;
     background-color: #fff;
+
+    header {
+        h1, h2 {
+            text-align: left;
+            color: $primary-color;
+        }
+    }
+
+    h2 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+
+    
 }

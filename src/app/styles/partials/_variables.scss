@@ -2,6 +2,9 @@ $primary-color: #003459;
 $secondary-color: #F7DBA7;
 $complimentary-color: #FCEED5;
 $neutral-color: #99A2A5;
+
+$breakpoint-mobile: 600px;
+$breakpoint-desktop: 1024px;
  
 :export {
   primaryColor: $primary-color;

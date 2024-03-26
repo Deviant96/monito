@@ -1,7 +1,9 @@
-$breakpoint-mobile: 600px;
-$breakpoint-desktop: 1024px;
+@import "@/app/styles/partials/_variables";
+@import "@/app/styles/partials/_mixins";
 
 .ProductListSection {
+  margin-top: 24px;
+
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 20px;
@@ -13,11 +15,14 @@ $breakpoint-desktop: 1024px;
   @media screen and (min-width: $breakpoint-desktop) {
     grid-template-columns: repeat(4, 1fr);
   }
+}
 
-  .ProductItem {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+.ViewMore {
+  margin-top: 24px;
+
+  @include Button();
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  justify-content: center;
+  width: 100%;
 }
