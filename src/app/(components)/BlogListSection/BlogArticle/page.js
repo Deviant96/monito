@@ -1,14 +1,15 @@
 import Image from "next/image";
+import styles from "./page.module.scss";
 
-const BlogArticle = () => {
+const BlogArticle = ({image, alt, title, summary, category}) => {
     return (
-        <article class="item-card">
-            <Image src="/dog.jpg" alt="Pomeranian White" width={200} height={200} />
-            <div class="item-details">
-                <span>Pet knowledge</span>
-                <h2>What is a Pomeranian? How to Identify Pomeranian Dogs</h2>
+        <article className={styles.BlogItem}>
+            <Image src={image} alt={alt} width={365} height={244} />
+            <div className={styles.BlogDetails}>
+                <span className={styles.CategoryName}>{category}</span>
+                <h2>{title}</h2>
                 <summary>
-                    The Pomeranian, also known as the Pomeranian (Pom dog), is always in the top of the cutest pets. Not only that, the small, lovely, smart, friendly, and skillful circus dog breed.
+                    {summary}
                 </summary>
             </div>
         </article>

@@ -1,0 +1,42 @@
+@import "@/app/styles/partials/_variables";
+@import "@/app/styles/partials/_mixins";
+
+.BlogListSection {
+    margin: 32px 16px;
+
+    h1, h2 {
+        text-align: left;
+        text-transform: capitalize;
+    }
+
+    h2 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px;
+        color: $primary-color;
+    }
+
+    .BlogList {
+        margin-top: 16px;
+
+        display: flex;
+        flex-flow: column;
+        gap: 16px;
+    }
+
+    .ViewMore {
+        margin-top: 24px;
+      
+        @include Button();
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        justify-content: center;
+        width: 100%;
+    }
+}

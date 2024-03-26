@@ -1,0 +1,24 @@
+[
+    {
+      "image": "/blog/blog1.jpg",
+      "alt": "A dog running towards us",
+      "title": "What is a Pomeranian? How to Identify Pomeranian Dogs",
+      "summary": "The Pomeranian, also known as the Pomeranian (Pom dog), is always in the top of the cutest pets. Not only that, the small, lovely, smart, friendly, and skillful circus dog breed.",
+      "category": "Pet knowledge"
+    },
+    {
+      "image": "/blog/blog2.jpg",
+      "alt": "A dog and a plate of food",
+      "title": "Dog Diet You Need To Know",
+      "summary": "Dividing a dog's diet may seem simple at first, but there are some rules you should know so that your dog can easily absorb the nutrients in the diet. For those who are just starting to raise dogs, especially newborn puppies with relatively weak resistance.",
+      "category": "Pet knowledge"
+    },
+    {
+      "image": "/blog/blog3.jpg",
+      "alt": "A half-body man angry to dog that bit the sofa",
+      "title": "Why Dogs Bite and Destroy Furniture and How to Prevent It Effectively",
+      "summary": "Dog bites are common during development. However, no one wants to see their furniture or important items being bitten by a dog.",
+      "category": "Pet knowledge"
+    }
+  ]
+  
