@@ -1,28 +1,37 @@
 @import "@/app/styles/partials/_variables";
 @import "@/app/styles/partials/_mixins";
 
-.FooterSection {    
-    margin: 0 16px;
-    
+.FooterSection {
     display: flex;
     flex-flow: column;
     align-items: center;
 
-    padding: 24px 0;
+    padding: 32px 0;
+    background-color: $complimentary-color;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    @media screen and (min-width: $breakpoint-mobile) {
+        padding: 64px 0;
+    }
+
+    .SectionWrapper {
+        margin: 0 16px;
+
+        @media screen and (min-width: $breakpoint-mobile) {
+            @include ContainerBreakpointMobile();
+        }
+    
+        @media screen and (min-width: $breakpoint-desktop) {
+            @include ContainerBreakpointDesktop();
+        }
+    }
 
     hr {
         margin-top: 24px;
         width: 100%;
         border: none;
         border-bottom: 1px solid $neutral-color-20;
-    } 
-
-    @media screen and (min-width: $breakpoint-mobile) {
-        @include ContainerBreakpointMobile();
-    }
-
-    @media screen and (min-width: $breakpoint-desktop) {
-        @include ContainerBreakpointDesktop();
     }
 }
 

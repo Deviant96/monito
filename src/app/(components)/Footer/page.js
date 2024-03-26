@@ -8,23 +8,25 @@ import CtaSubscribeSection from "./CtaSubscribeSection/page";
 const Footer = () => {
     return (
         <footer className={styles.FooterSection}>
-            <CtaSubscribeSection />
-            
-            <FooterNav />
+            <div className={styles.SectionWrapper}>
+                <CtaSubscribeSection />
+                
+                <FooterNav />
 
-            <hr />
+                <hr />
 
-            <div className={styles.BottomPart}>
-                <div className={styles.FooterLogo}>
-                    <Logo />
-                </div>
+                <div className={styles.BottomPart}>
+                    <div className={styles.FooterLogo}>
+                        <Logo />
+                    </div>
 
-                <div className={styles.Terms}>
-                    <Terms />
-                </div>
+                    <div className={styles.Terms}>
+                        <Terms />
+                    </div>
 
-                <div className={styles.Copy}>
-                    <Copyright />
+                    <div className={styles.Copy}>
+                        <Copyright />
+                    </div>
                 </div>
             </div>
         </footer>
