@@ -4,7 +4,7 @@ const CtaSubscribeSection = () => {
     return (
         <section className={styles.CtaSubscribeContainer}>
             <header className="">
-                <h1>Register now so you don't miss our programs</h1>
+                <h1>Register now so you don&apos;t miss our programs</h1>
             </header>
             <footer className={styles.Footer}>
                 <label for="ctaSubscribe">Enter your email</label>
