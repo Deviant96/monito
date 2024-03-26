@@ -5,6 +5,15 @@
     border-radius: 12px;
     box-shadow: 0px 4px 28px -2px #00000014;
 
+    @media screen and (min-width: $breakpoint-mobile) {
+        flex: 1;
+        height: fit-content;
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        
+    }
+
     img {
         display: block;
         height: 100%;
@@ -19,7 +28,7 @@
     }
 
     .CategoryName {
-        margin-top: 18px;
+        margin-top: 8px;
         display: inline-block;
         background: #00A7E7;
         border-radius: 28px;

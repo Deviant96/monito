@@ -9,6 +9,9 @@ const BlogListSection = () => {
             <header>
                 <h2>You already know ?</h2>
                 <h1>Useful pet knowledge</h1>
+                <div className={styles.ViewMoreTopContainer}>
+                    <button className={styles.ViewMore}>View More <FaAngleRight /></button>
+                </div>
             </header>
 
             <div className={styles.BlogList}>
@@ -17,7 +20,7 @@ const BlogListSection = () => {
                 ))}
             </div>
 
-            <div>
+            <div className={styles.ViewMoreBottomContainer}>
                 <button className={styles.ViewMore}>View More <FaAngleRight /></button>
             </div>
         </section>

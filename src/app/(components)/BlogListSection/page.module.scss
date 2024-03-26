@@ -4,6 +4,29 @@
 .BlogListSection {
     margin: 32px 16px;
 
+    @media screen and (min-width: $breakpoint-mobile) {
+        @include ContainerBreakpointMobile();
+        padding: 64px 0;
+
+        .ViewMoreTopContainer {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .ViewMoreBottomContainer {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        @include ContainerBreakpointDesktop();
+    }
+
+    header {
+        position: relative;
+    }
+
     h1, h2 {
         text-align: left;
         text-transform: capitalize;
@@ -28,6 +51,14 @@
         display: flex;
         flex-flow: column;
         gap: 16px;
+
+        @media screen and (min-width: $breakpoint-mobile) {
+            flex-flow: row;
+        }
+    
+        @media screen and (min-width: $breakpoint-desktop) {
+            
+        }
     }
 
     .ViewMore {
@@ -38,5 +69,9 @@
         color: $primary-color;
         justify-content: center;
         width: 100%;
+
+        @media screen and (min-width: $breakpoint-mobile) {
+            margin-top: 0;
+        }
     }
 }
