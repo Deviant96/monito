@@ -17,6 +17,12 @@
   }
 }
 
+.ViewMoreBottomContainer {
+  @media screen and (min-width: $breakpoint-mobile) {
+    display: none;
+  }
+}
+
 .ViewMore {
   margin-top: 24px;
 

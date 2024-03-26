@@ -1,4 +1,5 @@
 @import "@/app/styles/partials/_variables";
+@import "@/app/styles/partials/_mixins";
 
 .ProductSection {
     padding: 32px 16px;
@@ -7,6 +8,8 @@
     background-color: #fff;
 
     header {
+        position: relative;
+
         h1, h2 {
             text-align: left;
             color: $primary-color;
@@ -25,5 +28,33 @@
         line-height: 32px;
     }
 
-    
+    @media screen and (min-width: $breakpoint-mobile) {
+        @include ContainerBreakpointMobile();
+        padding: 64px 0;
+        
+        .ViewMoreTopContainer {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        @include ContainerBreakpointDesktop();
+    }
+}
+
+.ViewMore {
+    margin-top: 24px;
+  
+    @include Button();
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    justify-content: center;
+    width: 100%;
+
+    @media screen and (min-width: $breakpoint-mobile) {
+        margin-top: 0;
+    }
 }

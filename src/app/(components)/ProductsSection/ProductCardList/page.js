@@ -11,7 +11,7 @@ const ProductCardList = () => {
                     <ProductCard key={index} {...dog} />
                 ))}
             </div>
-            <div>
+            <div className={styles.ViewMoreBottomContainer}>
                 <button className={styles.ViewMore}>View More <FaAngleRight /></button>
             </div>
         </>
