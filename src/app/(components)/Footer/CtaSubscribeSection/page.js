@@ -8,7 +8,7 @@ const CtaSubscribeSection = () => {
             </header>
             <footer className={styles.Footer}>
                 <form>
-                    <label for="ctaSubscribe">Enter your email</label>
+                    <label htmlFor="ctaSubscribe">Enter your email</label>
                     <input id="ctaSubscribe" type="text" placeholder="Enter your email" />
                     <input type="submit" value="Subcribe Now" />
                 </form>
