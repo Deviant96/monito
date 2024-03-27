@@ -32,6 +32,7 @@ const Hero = () => {
                         style={{
                             height: "100%"
                         }}
+                        priority
                     />
                 </div>
 
