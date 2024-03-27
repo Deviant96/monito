@@ -59,21 +59,6 @@
         color: #FFFFFF;
     }
 
-    .Rectangles1 {
-        width: 135vw;
-        height: 135vw;
-        gap: 0px;
-        border-radius: 48px 0px 0px 0px;
-        
-        position: absolute;
-        z-index: 1;
-        bottom: -275px;
-        left: 95px;
-        transform: rotate(28deg);
-
-        background-color: $secondary-color;
-    }
-
     @media screen and (min-width: $breakpoint-mobile) {
         @include ContainerBreakpointMobile();
         position: relative;
@@ -91,19 +76,6 @@
 
         .HeroImageContainer {
             max-width: 40%;
-        }
-
-        .Rectangles1 {            
-            position: absolute;
-            z-index: 1;
-            transform: rotate(28deg);
-
-            bottom: -180px;
-            left: unset;
-            right: -40px;
-            width: 400px;
-            height: 400px;
-            border-radius: 72px;
         }
     }
 
@@ -130,6 +102,41 @@
             line-height: 24px;
             text-align: left;
         }
+    }
+}
+
+
+/* Precise positioning for header rectangle1 */
+.HeroSection .Rectangles1 {
+    width: 600px;
+    height: 600px;
+    border-radius: 48px 0px 0px 0px;
+    
+    position: absolute;
+    z-index: 1;
+    bottom: -66%;
+    left: 0%;
+    transform: rotate(28deg);
+
+    background-color: #F7DBA7;
+
+    @media screen and (min-width: "370px") {
+        bottom: -40%;
+        left: 85%;
+        transform: translate(-50%) rotate(24deg);
+    }
+
+    
+    @media screen and (min-width: $breakpoint-mobile) {
+        transform: rotate(28deg);
+
+        top: 40%;
+        bottom: unset;
+        left: 50%;
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        border-radius: 72px;
     }
 }
 
