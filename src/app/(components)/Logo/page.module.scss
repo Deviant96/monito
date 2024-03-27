@@ -1,9 +1,25 @@
+@import "@/app/styles/partials/_variables";
+
 .LogoContainer {
     width: 100%;
     height: 100%;
+    
+    max-width: 92px;
+    max-height: 32px;
 
     .Logo {
         height: 100%;
         width: 100%;
+    }
+
+    @media screen and (min-width: $breakpoint-mobile) {
+        max-width: 115px;
+        max-height: 40px;
+
+        flex: 1;
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        
     }
 }

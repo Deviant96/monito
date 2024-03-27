@@ -1,4 +1,5 @@
 @import "@/app/styles/partials/_variables";
+@import "@/app/styles/partials/_mixins";
 
 .NavBar {
     display: flex;
@@ -6,19 +7,128 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 100%;
-
-    .MenuList, .Search {
+    .Search {
         color: $primary-color;
         font-size: 28px;
     }
 
-    .Logo {
-        height: 100%;
-        width: 100%;
+    .Join, .ChangeLanguage { display: none; }
+
+    @media screen and (min-width: $breakpoint-mobile) {
+        @include ContainerBreakpointMobile();
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        @include ContainerBreakpointDesktop();
+        gap: 16px;
+
+        .NavActions {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+
+            order: 2;
+        }
+
+        .Join, .ChangeLanguage { display: flex; }
+
+        ul {
+            list-style-type: none;
+        }
     }
 }
 
 .NavContainer {
     padding: 32px 0 12px;
+}
+
+.MenuListContainer {
+    svg {
+        display: block;
+    }
+
+    .MenuList {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+    
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        color: $primary-color;
+        display: none;
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        display: block;
+        order: 1;
+
+        .MenuList {
+            display: flex;
+        }
+
+        svg {
+            display: none;
+        }
+    }
+}
+    
+.Search {
+    input[type="text"] {
+        display: none;
+    }
+    
+    @media screen and (min-width: $breakpoint-desktop) {
+        position: relative;
+        display: inline-block;
+        border-radius: 20px;
+        overflow: hidden;
+
+        input[type="text"] {
+            display: block;
+            width: 200px;
+            padding: 10px 20px 10px 40px ;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            overflow: hidden;
+        
+            color: $neutral-color-40;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            text-align: left;
+        }
+
+        svg {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        
+            font-size: 18px;
+            color: $neutral-color-60;
+        }
+    }
+}
+
+.ChangeLanguage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 8px;
+
+    cursor: pointer;
+}
+
+.secondaryButton {
+    @include Button();
+    border: none;
+    background-color: $primary-color;
+    color: #FFFFFF;
 }
