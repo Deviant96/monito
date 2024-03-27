@@ -6,6 +6,9 @@
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
+    
+    position: relative;
+    z-index: 99;
 
     .Search {
         color: $primary-color;
