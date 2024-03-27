@@ -12,10 +12,10 @@ const FooterNav = () => {
                 <li><a href="/contact">Contact</a></li>
             </ul>
             <ul className={styles.SocialList}>
-                <li><a href="/Facebook"><FaFacebook /></a></li>
-                <li><a href="/Twitter"><FaTwitter /></a></li>
-                <li><a href="/Instagram"><FaInstagram /></a></li>
-                <li><a href="/YouTube"><FaYoutube /></a></li>
+                <li><a href="/Facebook" aria-label="Visit Monito's Facebook page"><FaFacebook /></a></li>
+                <li><a href="/Twitter" aria-label="Visit Monito's Twitter page"><FaTwitter /></a></li>
+                <li><a href="/Instagram" aria-label="Visit Monito's Instagram page"><FaInstagram /></a></li>
+                <li><a href="/YouTube" aria-label="Visit Monito's YouTube page"><FaYoutube /></a></li>
             </ul>
         </div>
     )
