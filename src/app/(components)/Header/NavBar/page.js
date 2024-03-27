@@ -30,7 +30,13 @@ const NavBar = () => {
                     </div>
                     <div className={styles.ChangeLanguage}>
                         <span className={styles.ChangeLanguage__Flag}>
-                            <Image src="https://hatscripts.github.io/circle-flags/flags/vn.svg" alt="" width={24} height={24} />
+                            <Image 
+                                src="https://hatscripts.github.io/circle-flags/flags/vn.svg" 
+                                alt="" 
+                                width={24} 
+                                height={24} 
+                                priority
+                            />
                         </span>
                         <span className={styles.ChangeLanguage__CountryCode}>
                             VND
